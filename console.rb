@@ -57,8 +57,8 @@ album4 = Album.new({
 artist1.name = "The Lighthouse Family"
 artist1.update
 
-# album4.title = "There Is Nothing Left To Lose"
-# album4.update
+album4.title = "There Is Nothing Left To Lose"
+album4.update
 
 binding.pry
 
