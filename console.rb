@@ -54,6 +54,12 @@ album4 = Album.new({
 
   album4.save()
 
+artist1.name = "The Lighthouse Family"
+artist1.update
+
+# album4.title = "There Is Nothing Left To Lose"
+# album4.update
+
 binding.pry
 
 nil
