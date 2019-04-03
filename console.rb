@@ -60,6 +60,8 @@ artist1.update
 album4.title = "There Is Nothing Left To Lose"
 album4.update
 
+
+
 binding.pry
 
 nil
