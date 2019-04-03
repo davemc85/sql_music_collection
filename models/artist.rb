@@ -37,5 +37,9 @@ class Artist
     SqlRunner.run(sql, values)
   end
 
+  def delete()
+    
+  end
+
 
 end
