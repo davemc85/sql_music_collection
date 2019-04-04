@@ -12,3 +12,4 @@ CREATE TABLE albums (
   genre VARCHAR,
   artist_id INT REFERENCES artists(id) ON DELETE CASCADE
 );
+-- on delete CASCADE will delete all albums related to the artist when the artist is deleted
