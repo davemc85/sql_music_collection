@@ -25,10 +25,11 @@ class Artist
   end
 
   def albums() # lists all albums by selected artist
-    sql = "SELECT * FROM albums WHERE artist_id = $1"
+    sql = "SELECT * FROM albums WHERE id = $1"
     values = [@id]
-    results = SqlRunner.run(sql, values)
-    return results.map { |album| Album.new(album)}
+    albums = SqlRunner.run(sql, values)
+    result = albums.map { |album| Album.new(album)}
+    return result
   end
 
   def update()

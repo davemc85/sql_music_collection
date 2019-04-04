@@ -28,10 +28,11 @@ class Album
   end
 
   def artist() #get artist from album
-    sql = "SELECT * FROM artists WHERE id = $1"
+    sql = "SELECT * FROM artists WHERE artist_id = $1"
     values = [@artist_id]
-    result = SqlRunner.run(sql, values)[0]
-    return Artist.new(result)
+    artist = SqlRunner.run(sql, values)[0]
+    result = Artist.new(artist)
+    return result
   end
 
   def update()

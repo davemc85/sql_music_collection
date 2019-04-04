@@ -10,5 +10,5 @@ CREATE TABLE albums (
   id SERIAL PRIMARY KEY,
   title VARCHAR,
   genre VARCHAR,
-  artist_id INT REFERENCES artists(id)
+  artist_id INT REFERENCES artists(id) ON DELETE CASCADE
 );
